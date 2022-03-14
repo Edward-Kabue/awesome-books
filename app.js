@@ -83,5 +83,5 @@ document.querySelector("#book-form").addEventListener("submit", (e) => {
 document.querySelector("#form-list").addEventListener("click", (e) => {
   Book.deleteBook(e.target);
 
-  Book.removeBook(e.target.parentElement.previousElementSibling.textContent);
+Book.removeBook(e.target.parentElement.previousElementSibling.previousElementSibling.textContent);
 });
