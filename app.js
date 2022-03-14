@@ -23,7 +23,6 @@ class Book {
      
       <td><button href="#" class="btn btn-danger btn-sm delete">remove</a></button>
     `;
-
     list.appendChild(row);
   }
 
@@ -45,7 +44,6 @@ class Book {
     } else {
       books = JSON.parse(localStorage.getItem("books"));
     }
-
     return books;
   }
 
