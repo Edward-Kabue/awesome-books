@@ -18,8 +18,8 @@ class Book {
     const row = document.createElement("tr");
 
     row.innerHTML = `
-      <td>${book.title}
-      by  ${book.author}</td>
+      <td>${book.title}</td>
+      <td>${book.author}</td>
      
       <td><button href="#" class="btn btn-danger btn-sm delete">remove</a></button>
     `;
