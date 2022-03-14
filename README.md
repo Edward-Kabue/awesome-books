@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse capstone
+## Awesome books
 
-Developed a project which displays a list of books. The user can add books by providing a book title and an author. The user can also delete a certain book from the list by clicking the delete button.
+Developed a  that displays a list of books. The user can add books by providing a book title and an author. The user can also delete a certain book from the list by clicking the delete button.
 
 
 ## Built With
@@ -10,11 +10,6 @@ Developed a project which displays a list of books. The user can add books by pr
 - html
 - css/sass
 - Javascript
-
-## Acknowledgements
-
-- Original design idea by [Cindy Shin in Behance.](https://www.behance.net/adagio07)
-- [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Authors
 
