@@ -1,20 +1,19 @@
 class Books {
-  constructor(title = "", author = "") {
+  constructor(title = '', author = '') {
     this.title = title;
     this.author = author;
-    this.books =
-      localStorage.getItem("books") !== null
-        ? JSON.parse(localStorage.getItem("books"))
-        : "";
+    this.books = localStorage.getItem('books') !== null
+      ? JSON.parse(localStorage.getItem('books'))
+      : '';
   }
 
   saveBook(BTSave = this.books) {
     const storeBook = JSON.stringify(BTSave);
-    localStorage.setItem("books", storeBook);
+    localStorage.setItem('books', storeBook);
   }
 
   addBook() {
-    if (this.books === "" || this.books.length <= 0) {
+    if (this.books === '' || this.books.length <= 0) {
       this.books = [
         {
           Id: 1,
@@ -41,8 +40,8 @@ class Books {
   }
 
   static displayBook(book) {
-    const list = document.querySelector("#form-list");
-    const row = document.createElement("tr");
+    const list = document.querySelector('#form-list');
+    const row = document.createElement('tr');
     row.innerHTML = ` <td>${book.Btitle}</td> 
     <td>${book.Bauthor}</td> <td>
     <button type="submit" id="${book.Id}" class="btn">Remove</button></td> `;
@@ -52,8 +51,8 @@ class Books {
 
 //  display all the books;
 
-if (localStorage.getItem("books") !== null) {
-  const books = JSON.parse(localStorage.getItem("books"));
+if (localStorage.getItem('books') !== null) {
+  const books = JSON.parse(localStorage.getItem('books'));
   books.forEach((element) => {
     Books.displayBook(element);
   });
@@ -61,14 +60,14 @@ if (localStorage.getItem("books") !== null) {
 
 // add book function
 
-const title = document.getElementById("title");
-const author = document.getElementById("author");
+const title = document.getElementById('title');
+const author = document.getElementById('author');
 
-document.querySelector("#book-form").addEventListener("submit", (e) => {
-  if (title.value === "" || author.value === "") {
-    const error = document.getElementById("error");
-    error.textContent = "Title and Author fields must be filled out";
-    error.style.color = "red";
+document.querySelector('#book-form').addEventListener('submit', (e) => {
+  if (title.value === '' || author.value === '') {
+    const error = document.getElementById('error');
+    error.textContent = 'Title and Author fields must be filled out';
+    error.style.color = 'red';
     e.preventDefault();
   } else {
     const addBk = new Books(title.value, author.value);
@@ -84,8 +83,7 @@ function removeBk() {
   this.parentNode.parentNode.remove();
 }
 
-const btn = document.querySelectorAll(".btn");
+const btn = document.querySelectorAll('.btn');
 btn.forEach((element) => {
-  element.addEventListener("click", removeBk);
+  element.addEventListener('click', removeBk);
 });
-
