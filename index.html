@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,7 +14,14 @@
         <h1 class="display-4 text-center">
             Awesome Books
         </h1>
-        <table>
+        <table class="list-table">
+            <thead>
+                <tr class="line_hd">
+                 <th>Title</th>
+                 <th>Author</th>
+                 <th>Action</th>
+                </tr>
+            </thead>
             <tbody id="form-list"></tbody>
         </table>
         <form id="book-form">
@@ -26,15 +33,15 @@
                 <label for="author">Author</label>
                 <input type="text" id="author" class="form-control">
             </div>
-
-            <input type="submit" value="Add Book" class="btn btn-primary btn-block">
+            
+            <button type="submit" id="button">Add Book</button>
 
         </form>
 
     </div>
 
 
-    <script type="module" src="app.js"></script>
+    <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/c397284221.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
