@@ -11,11 +11,13 @@
 
 <body>
     <header>
-        <div class="logo"><p>Awesome Books</p></div>
+        <div class="logo">
+            <p>Awesome Books</p>
+        </div>
         <ul class="navbar">
-            <li ><a href="#list" id="list-link" class="links active">List</a></li>
-            <li ><a href="#add_book" id="add-link" class="links">Add new</a></li>
-            <li ><a href="#contact" id="contact-link" class="links">Contact</a></li>
+            <li><a href="#list" id="list-link" class="links active">List</a></li>
+            <li><a href="#add_book" id="add-link" class="links">Add new</a></li>
+            <li><a href="#contact" id="contact-link" class="links">Contact</a></li>
         </ul>
     </header>
     <main>
@@ -26,15 +28,15 @@
             <table class="list-table">
                 <thead>
                     <tr class="line_hd">
-                     <th>Title</th>
-                     <th>Author</th>
-                     <th>Action</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody id="form-list"></tbody>
             </table>
         </section>
-        <section  id="add_book">
+        <section id="add_book">
             <form id="book-form">
                 <div class="form-group">
                     <label for="title">Title</label>
@@ -44,25 +46,27 @@
                     <label for="author">Author</label>
                     <input type="text" id="author" class="form-control">
                 </div>
-                
+
                 <button type="submit" id="button">Add Book</button>
-    
+
             </form>
         </section>
         <section id="contact" class="contact-us ">
             <h2>Contact Information</h2>
             <p>
-              Do have any question or you just want to say "hello" <br />
-              You can Reach out to us!
+                Do have any question or you just want to say "hello" <br />
+                You can Reach out to us!
             </p>
             <ul>
-              <li>Our E-mail: books@awesome.com</li>
-              <li>Our Phone Number: 003311223344</li>
-              <li>Our Adress: John Doe street, 22, 883322 Vikings, Valhala</li>
+                <li>Our E-mail: books@awesome.com</li>
+                <li>Our Phone Number: 003311223344</li>
+                <li>Our Adress: John Doe street, 22, 883322 Vikings, Valhala</li>
             </ul>
         </section>
     </main>
-
+    <footer>
+        <p>&copy Copyright: All rights reserved</p>
+    </footer>
 
     <script src="main.js"></script>
     <script src="https://kit.fontawesome.com/c397284221.js" crossorigin="anonymous"></script>
